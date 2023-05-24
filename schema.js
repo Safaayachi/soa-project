@@ -25,6 +25,7 @@ const typeDefs = `#graphql
   }
   type Mutation {
     createProduct(id: String!, title: String!, description:String!, price: Int!): Product
+    createUser(id: String!, firstName : String!, lastName : String!, email : String!,password : String!): User
   }
 `;
 
