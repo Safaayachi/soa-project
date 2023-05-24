@@ -32,5 +32,6 @@ message SearchUsersResponse {
 service UserService {
   rpc GetUser(GetUserRequest) returns (GetUserResponse);
   rpc SearchUsers(SearchUsersRequest) returns (SearchUsersResponse);
+  
 
 }

@@ -2,7 +2,7 @@ const { gql } = require("@apollo/server");
 
 const typeDefs = `#graphql
   type Product {
-    id: String!
+    
     title: String!
     description: String!
     price: Int!
@@ -24,8 +24,8 @@ const typeDefs = `#graphql
     users: [User]
   }
   type Mutation {
-    createProduct(id: String!, title: String!, description:String!, price: Int!): Product
-    createUser(id: String!, firstName : String!, lastName : String!, email : String!,password : String!): User
+    createProduct( title: String!, description:String!, price: Int!): Product
+    createUser(id: String!, firstName : String!, lastName : String!, email : String!,password : String!): Product
   }
 `;
 

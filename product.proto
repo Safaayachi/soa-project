@@ -4,9 +4,10 @@ package product;
 
 
 message Product {
-  string id = 1;
+  string product_id = 1;
   string title = 2;
   string description = 3;
+  int32 price=4;
 
 }
 
@@ -32,6 +33,7 @@ message CreateProductRequest {
   string product_id = 1;
   string title = 2;
   string description = 3;
+  int32 price=4;
 }
 
 message CreateProductResponse {
